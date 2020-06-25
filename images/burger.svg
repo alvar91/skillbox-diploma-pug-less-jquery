@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="18px">
+    <defs>
+        <linearGradient id="grad_1" x1="0%" x2="0%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="rgb(242,101,34)" stop-opacity="1"/>
+            <stop offset="18%" stop-color="rgb(246,55,90)" stop-opacity="1"/>
+            <stop offset="99%" stop-color="rgb(250,8,145)" stop-opacity="1"/>
+        </linearGradient>
+    </defs>
+    <path fill-rule="evenodd"  fill="rgb(255, 78, 46)" d="M-0.000,18.000 L-0.000,15.437 L24.000,15.437 L24.000,18.000 L-0.000,18.000 ZM-0.000,7.719 L24.000,7.719 L24.000,10.281 L-0.000,10.281 L-0.000,7.719 ZM-0.000,-0.000 L24.000,-0.000 L24.000,2.562 L-0.000,2.562 L-0.000,-0.000 Z"/>
+    <path fill="url(#grad_1)" d="M-0.000,18.000 L-0.000,15.437 L24.000,15.437 L24.000,18.000 L-0.000,18.000 ZM-0.000,7.719 L24.000,7.719 L24.000,10.281 L-0.000,10.281 L-0.000,7.719 ZM-0.000,-0.000 L24.000,-0.000 L24.000,2.562 L-0.000,2.562 L-0.000,-0.000 Z"/>
+</svg>
