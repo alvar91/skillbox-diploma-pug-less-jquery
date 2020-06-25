@@ -1,0 +1,30 @@
+.tel {
+  &--header {
+    .font(18px, bold);
+    color: @font-1;
+  }
+}
+
+@media (min-width: 600px) {
+  .tel {
+    &--header {
+      margin-left: auto;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .tel {
+    &--header {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (min-width: 1370px) {
+  .tel {
+    &--header {
+      margin-left: 0;
+    }
+  }
+}

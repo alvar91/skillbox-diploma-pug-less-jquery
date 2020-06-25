@@ -1,0 +1,28 @@
+.contacts__item {
+  display: block;
+  .font(20px, 500);
+  color: @font-grey;
+
+  &:first-child {
+    margin-bottom: 23px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__item {
+    .font(25px, 500);
+    color: #000000;
+
+    &:first-child {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__item {
+    &:first-child {
+      margin-bottom: 31px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.note {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.note__symbol {
+  margin: 0 3px 0 0;
+  .font(20px, 400);
+  line-height: 30px;
+}
+
+.note__text {
+  margin: 0;
+  .font(15px, 400);
+  line-height: 30px;
+}
+
+.note__br {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .note__text {
+    .font(18px, 400);
+  }
+
+  .note__br {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .note__symbol {
+    margin: 0 5px 0 0;
+  }
+}

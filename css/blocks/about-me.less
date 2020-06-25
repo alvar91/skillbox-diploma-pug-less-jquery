@@ -1,0 +1,248 @@
+.about-me {
+  position: relative;
+  margin-bottom: 43px;
+}
+
+.about-me__decorative {
+  position: absolute;
+
+  &--tag-2,
+  &--div-2 {
+    display: none;
+  }
+
+  &--brace {
+    top: 51px;
+    left: 49px;
+    transform: rotate(28deg);
+  }
+
+  &--hash {
+    top: 156px;
+    left: 37px;
+    transform: rotate(15deg);
+  }
+
+  &--tag-1 {
+    top: 31px;
+    left: 173px;
+    transform: rotate(-31deg);
+  }
+
+  &--div-1 {
+    top: 95px;
+    right: 39px;
+    transform: rotate(20deg);
+  }
+}
+
+.about-me__photo {
+  width: 100%;
+  height: 415px;
+  background-image: url("../images/man-mob.png"), url("../images/ellipse.svg");
+  background-repeat: no-repeat;
+  background-position: top 82px left 80.5%, top 121px left 39%;
+  background-size: auto, 470px auto;
+  background-clip: border-box;
+}
+
+.about-me__name {
+  margin: 13.5px 0 0;
+}
+
+.about-me__occupation {
+  margin: 8px 0 0;
+  .font(16px, 400);
+  line-height: 24px;
+  text-align: center;
+}
+
+.about-me__button {
+  margin: 23px 0 0;
+}
+
+@media (min-width: 600px) {
+  .about-me {
+    position: relative;
+  }
+
+  .about-me__decorative {
+    &--brace {
+      top: 26px;
+      left: 7.5%;
+    }
+
+    &--hash {
+      top: 261px;
+      left: 5.7%;
+    }
+
+    &--tag-1 {
+      top: 302px;
+      left: 35%;
+      transform: rotate(-22deg);
+    }
+
+    &--div-1 {
+      top: 12px;
+      right: 6.95%;
+      transform: rotate(20deg);
+      z-index: 10;
+    }
+  }
+
+  .about-me__photo {
+    position: absolute;
+    right: 0;
+    width: 53.42%;
+    height: 334px;
+    background-position: top 10px left 70%, top 35px left;
+  }
+
+  .about-me__name {
+    margin: 0;
+    padding: 80px 0 0;
+    text-align: left;
+  }
+
+  .about-me__occupation {
+    text-align: left;
+  }
+
+  .about-me__button {
+    margin: 23px 0 110px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .about-me {
+    margin-bottom: 86px;
+  }
+
+  .about-me__decorative {
+    &--tag-2,
+    &--div-2 {
+      display: block;
+    }
+
+    &--brace {
+      top: 86px;
+    }
+
+    &--hash {
+      top: 561px;
+    }
+
+    &--tag-1 {
+      top: 512px;
+    }
+
+    &--tag-2 {
+      top: 161px;
+      left: 41.2%;
+      transform: rotate(15deg);
+    }
+
+    &--div-1 {
+      top: 476px;
+    }
+
+    &--div-2 {
+      top: 77px;
+      right: 6.3%;
+      transform: rotate(-15deg);
+    }
+  }
+
+  .about-me__photo {
+    width: 53.42%;
+    height: 694px;
+    background-image: url("../images/man-tablet.png"),
+      url("../images/ellipse-tab.svg");
+    background-position: top 57px left 67%, top 169px left;
+    background-size: auto, 919px auto;
+  }
+
+  .about-me__name {
+    padding: 239px 0 0;
+    font-weight: 900;
+  }
+
+  .about-me__occupation {
+    margin: 25px 0 0;
+    font-size: 25px;
+  }
+
+  .about-me__button {
+    margin: 47px 0 230px;
+  }
+}
+
+@media (min-width: 1370px) {
+  .about-me__decorative {
+    &--tag-2 {
+      display: none;
+    }
+
+    &--brace {
+      top: 64px;
+      left: 6.6%;
+    }
+
+    &--hash {
+      top: 153px;
+      left: 12.8%;
+    }
+
+    &--tag-1 {
+      top: 558px;
+      left: 19.5%;
+    }
+
+    &--div-1 {
+      top: 350px;
+      right: 46.2%;
+    }
+
+    &--div-2 {
+      top: 92px;
+      right: 55.3%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-me__decorative {
+    &--hash {
+      top: 293px;
+    }
+
+    &--tag-1 {
+      top: 598px;
+    }
+
+    &--div-1 {
+      top: 470px;
+    }
+  }
+
+  .about-me__photo {
+    background-image: url("../images/man-desktop.png"),
+      url("../images/ellipse.svg");
+    background-position: top 27px left 55%, top 63px left 198%;
+    background-size: auto, 919px auto;
+  }
+
+  .about-me__name {
+    padding: 212px 0 0;
+    font-size: 80px;
+  }
+
+  .about-me__occupation {
+    margin: 18px 0 0;
+  }
+
+  .about-me__button {
+    margin: 49px 0 240px;
+  }
+}

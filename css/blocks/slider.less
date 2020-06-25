@@ -1,0 +1,168 @@
+.slider__nav {
+  &--desktop {
+    display: none;
+  }
+
+  &--mob {
+    margin-bottom: 50px;
+  }
+}
+
+.slider__list {
+  margin: 0 0 45px;
+  padding: 0;
+  .list-reset();
+}
+
+.slider__item {
+  width: 100%;
+  height: auto;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider__link {
+  outline: none;
+
+  &--img {
+    margin-bottom: 17px;
+    display: block;
+    font-size: 0;
+  }
+
+  &--description {
+    margin-left: -1px;
+    display: block;
+    .font(18px, 500);
+    color: @font-grey;
+  }
+}
+
+.slider__img {
+  margin: 0 auto;
+  width: 280px;
+  height: 251px;
+}
+
+@media (min-width: 321px) {
+  .slider__link {
+    &--description {
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .slider__list {
+    width: 100%;
+  }
+
+  .slider__item {
+    width: 45%;
+  }
+
+  .slider__link {
+    &--img {
+      margin: 0 20px;
+    }
+    &--description {
+      text-align: center;
+    }
+  }
+
+  .slider__img {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slider__list {
+    margin-bottom: 101px;
+  }
+
+  .slider__item {
+    width: auto;
+  }
+
+  .slider__link {
+    &--img {
+      margin: 0 0 22px 20px;
+    }
+
+    &--even {
+      margin-left: -20px;
+    }
+
+    &--description {
+      padding-left: 13px;
+      .font(25px, 500);
+    }
+  }
+
+  .slider__img {
+    width: 454.9px;
+    height: auto;
+  }
+
+  .slider__nav {
+    &--mob {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+@media (min-width: 1370px) {
+  .slider__container {
+    position: relative;
+  }
+
+  .slider__list {
+    margin-bottom: 96px;
+  }
+
+  .slider__item {
+    width: 370px;
+  }
+
+  .slider__link {
+    &--img {
+      margin: 0 10px 33px;
+    }
+
+    &--description {
+      padding-left: 0;
+      font-size: 20px;
+    }
+  }
+
+  .slider__nav {
+    &--desktop {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 61px;
+      height: 60px;
+      top: 116px;
+      background-image: url("../images/arrow.png");
+      border-radius: 50%;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+      z-index: 30;
+      cursor: pointer;
+      outline: none;
+    }
+
+    &--left {
+      left: -30px;
+    }
+
+    &--right {
+      right: -30px;
+      transform: rotate(180deg);
+    }
+
+    &--mob {
+      display: none;
+    }
+  }
+}

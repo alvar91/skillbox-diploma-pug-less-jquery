@@ -1,0 +1,100 @@
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &--header {
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    font-size: 0;
+    background-color: transparent;
+    background-image: url("../images/tel-header-icon.png");
+  }
+
+  &--red,
+  &--footer {
+    padding: 18.5px 15px;
+    width: 100%;
+    .font(16px, 400);
+    color: #ffffff;
+    text-align: center;
+    background-color: @btn-red;
+    transition: outline-offset 0.5s linear 0s;
+
+    &:hover,
+    :focus {
+      outline: 2px solid @btn-red;
+      outline-offset: 3px;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .button {
+    &--header {
+      margin-left: 2.9%;
+      padding: 13px 10px 12px;
+      width: 207px;
+      height: auto;
+      .font(16px, 400);
+      color: @btn-white-text;
+      background-color: #ffffff;
+      background-image: none;
+      border: 1px solid @btn-white-border;
+      transition: outline-offset 0.5s linear 0s;
+
+      &:hover,
+      :focus {
+        font-weight: 500;
+        outline: 1px solid @btn-white-border;
+        outline-offset: 2px;
+      }
+    }
+
+    &--red,
+    &--footer {
+      width: 200px;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    &--red {
+      padding: 25px 15px 23px;
+      width: 320px;
+      .font(18px, 500);
+    }
+
+    &--footer {
+      padding: 13px 10px 12px;
+      width: 248px;
+      .font(16px, 400);
+      color: @btn-white-text;
+      background-color: #ffffff;
+      background-image: none;
+      border: 1px solid @btn-white-border;
+
+      &:hover,
+      :focus {
+        font-weight: 500;
+        outline: 1px solid @btn-white-border;
+        outline-offset: 2px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button {
+    &--header {
+      margin-left: 0;
+    }
+
+    &--red {
+      padding: 21px 15px 19px;
+      width: 270px;
+    }
+  }
+}

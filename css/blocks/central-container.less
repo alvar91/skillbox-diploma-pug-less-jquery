@@ -1,0 +1,23 @@
+.central-container {
+  margin: 0 6.25% 0;
+  width: 87.5%;
+}
+
+@media (min-width: @tablet-width) {
+  .central-container {
+    margin: 0 3.91% 0;
+    width: 92.18%;
+
+    &--modified {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1370px) {
+  .central-container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}

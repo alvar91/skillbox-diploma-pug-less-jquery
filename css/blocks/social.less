@@ -1,0 +1,44 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  .list-reset();
+  font-size: 0;
+}
+
+.social__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: block;
+  background-image: url("../images/sprite.png");
+
+  &--vk {
+    width: 35px;
+    height: 28px;
+  }
+
+  &--fb {
+    width: 15px;
+    height: 28px;
+    background-position: -66px 0;
+  }
+
+  &--tw {
+    width: 29px;
+    height: 28px;
+    background-position: -111px 0;
+  }
+
+  &--inst {
+    width: 25px;
+    height: 29px;
+    background-position: -169px 0;
+  }
+}

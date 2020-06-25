@@ -1,0 +1,42 @@
+.form {
+  width: 100%;
+  text-align: center;
+
+  &__group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
+.input {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #dfdedd;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 5px 0;
+  border-radius: 15px;
+
+  &_error {
+    border-color: #c52929;
+  }
+
+  &:focus,
+  &:active {
+    border-color: #0f8fee;
+    outline: none;
+    position: relative;
+    z-index: 1;
+  }
+
+  &:invalid {
+    box-shadow: none;
+    border-color: #c52929;
+  }
+
+  &::placeholder {
+    color: #aeb5b9;
+    font: normal 14px/143% Arial;
+  }
+}
