@@ -2,8 +2,3 @@ node_modules
 dist
 build
 *.log
-images
-jquery
-js
-pug
-css
