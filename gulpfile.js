@@ -68,7 +68,14 @@ gulp.task("styles", function () {
     .pipe(browserSync.stream());
 });
 
-gulp.task("static", function () {
+gulp.task("fonts", function () {
+  return gulp
+    .src("./fonts/*.*")
+    .pipe(gulp.dest("./dist/fonts/"))
+    .pipe(browserSync.stream());
+});
+
+gulp.task("jquery", function () {
   return gulp
     .src("./jquery/*.*")
     .pipe(gulp.dest("./dist/"))
@@ -118,7 +125,7 @@ gulp.task(
   "build",
   gulp.series(
     "clean",
-    gulp.parallel("html", "static", "scripts", "styles", "images", "blocks images")
+    gulp.parallel("html", "fonts", "jquery","scripts", "styles", "images", "blocks images")
   )
 );
 gulp.task("default", gulp.series("build", "watch"));
