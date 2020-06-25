@@ -1,0 +1,23 @@
+include ./mixins.pug
+
+header.page-header
+    .central-container
+        .page-header__wrapper
+            .page-header__wrapper-1
+                button#nav-btn.page-header__toggle.page-header__toggle--closed
+                    +burger()
+                a(class="page-header__tel tel tel--header" href="tel:+74999955577")
+                    | +7 (499) 995-55-77
+                button.page-header__button.button.button--header.js-popup
+                    | Заказать звонок
+            nav.page-header__nav.main-nav
+                ul.main-nav__list.main-nav__list--header
+                    li.main-nav__item.main-nav__item--header
+                        a(class="main-nav__link main-nav__link--header" href="#services")
+                            | Услуги
+                    li.main-nav__item.main-nav__item--header
+                        a(class="main-nav__link main-nav__link--header" href="#portfolio")
+                            | Портфолио
+                    li.main-nav__item.main-nav__item--header
+                        a(class="main-nav__link main-nav__link--header" href="#price")
+                            | Стоимость

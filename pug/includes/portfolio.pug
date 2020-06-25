@@ -1,0 +1,46 @@
+section.portfolio
+    .central-container
+        h2#portfolio.portfolio__title.section-heading
+            | Примеры моих работ
+    .central-container.central-container--modified
+        .portfolio__slider.slider
+            .slider__container
+                .slider__nav.slider__nav--desktop.slider__nav--left
+                .slider__list
+                    #slide-1.slider__item
+                        .slider__link.slider__link--img
+                            picture
+                                source(media="(min-width: 1370px)" srcset="images/psychologist-desktop.jpg")
+                                source(media="(min-width: 600px)" srcset="images/psychologist-tablet.jpg")
+                                img(class="slider__img" src="images/psychologist-desktop.jpg" alt="Скриншот сайта психолога Веры Антоновой")
+                        a(class="slider__link slider__link--description" href="#")
+                            | Сайт психолога Веры Антоновой
+                    #slide-2.slider__item
+                        .slider__link.slider__link--img
+                            picture
+                                source(media="(min-width: 1370px)" srcset="images/child-desktop.jpg")
+                                source(media="(min-width: 600px)" srcset="images/child-tablet.jpg")
+                                img(class="slider__img" src="images/child.jpg" alt="Скриншот сайта магазина детской одежды")
+                        a(class="slider__link slider__link--description" href="#")
+                            | Сайт магазина детской одежды
+                    #slide-3.slider__item
+                        .slider__link.slider__link--img
+                            picture
+                                source(media="(min-width: 1370px)" srcset="images/fish-desktop.jpg")
+                                source(media="(min-width: 600px)" srcset="images/fish-desktop.jpg")
+                                img(class="slider__img" src="images/fish-desktop.jpg" alt="Скриншот сайта магазина Рыболов")
+                        a(class="slider__link slider__link--description" href="#")
+                            | Сайт магазина &laquo;Рыболов&raquo;
+                    #slide-4.slider__item
+                        .slider__link.slider__link--img
+                            picture
+                                source(media="(min-width: 1370px)" srcset="images/child-desktop.jpg")
+                                source(media="(min-width: 600px)" srcset="images/child-tablet.jpg")
+                                img(class="slider__img" src="images/child.jpg" alt="Скриншот сайта магазина детской одежды")
+                        a(class="slider__link slider__link--description" href="#")
+                            | Сайт магазина детской одежды
+                .slider__nav.slider__nav--desktop.slider__nav--right
+                .slider__nav.slider__nav--mob.nav-circle
+                .central-container
+                    button.portfolio__button.button.button--red.js-popup
+                        | Заказать проект
