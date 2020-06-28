@@ -1,15 +1,16 @@
 $(document).ready(function () {
+  const jsForm = $(".js-form");
   $(".js-popup").click(function () {
-    $(".js-form").addClass("popup_active");
+    jsForm.fadeIn(300);
   });
 
   $(".js-form-close").click(function () {
-    $(".js-form").removeClass("popup_active");
+    jsForm.fadeOut(300);
   });
 
-  $(".js-form").click(function (event) {
+  jsForm.click(function (event) {
     if (!event.target.closest(".js-content")) {
-      $(".js-form").removeClass("popup_active");
+      jsForm.fadeOut(300);
     }
   });
 });

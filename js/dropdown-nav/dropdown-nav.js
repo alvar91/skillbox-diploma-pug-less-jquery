@@ -1,31 +1,43 @@
 $(document).ready(function () {
+  const pageHeaderToggle = $(".page-header__toggle");
+  const pageHeader = $(".page-header");
+  const pageHeaderNav = $(".page-header__nav");
+  
   $("#nav-btn").click(function () {
-    if ($(".page-header__toggle").hasClass("page-header__toggle--closed")) {
-      $(".page-header__nav").css("display", "block");
-      $(".page-header__toggle")
+    if (pageHeaderToggle.hasClass("page-header__toggle--closed")) {
+      pageHeaderNav.css("display", "block");
+      pageHeaderToggle
         .removeClass("page-header__toggle--closed")
         .addClass("page-header__toggle--opened");
     } else {
-      $(".page-header__nav").css("display", "none");
-      $(".page-header__toggle")
+      pageHeaderNav.css("display", "none");
+      pageHeaderToggle
         .removeClass("page-header__toggle--opened")
         .addClass("page-header__toggle--closed");
     }
 
-    if ($(".page-header").hasClass("page-header--margin")) {
-      $(".page-header").removeClass("page-header--margin");
+    if (pageHeader.hasClass("page-header--margin")) {
+      pageHeader.removeClass("page-header--margin");
     } else {
-      $(".page-header").addClass("page-header--margin");
+      pageHeader.addClass("page-header--margin");
     }
   });
 
   $(".main-nav__link--header").click(function () {
-    if ($(".page-header__toggle").hasClass("page-header__toggle--opened")) {
-      $(".page-header__nav").css("display", "none");
-      $(".page-header__toggle")
+    if (pageHeaderToggle.hasClass("page-header__toggle--opened")) {
+      pageHeaderNav.css("display", "none");
+      pageHeaderToggle
         .removeClass("page-header__toggle--opened")
         .addClass("page-header__toggle--closed");
-      $(".page-header").removeClass("page-header--margin");
+        pageHeader.removeClass("page-header--margin");
+    }
+  });
+
+  $(window).resize(function() {
+    if ($(window).width() < 1024 && pageHeaderToggle.hasClass("page-header__toggle--closed")) {
+      pageHeaderNav.css("display", "none");
+    } else {
+      pageHeaderNav.css("display", "block");
     }
   });
 });

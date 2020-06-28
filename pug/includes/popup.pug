@@ -1,18 +1,18 @@
 section.popup.js-form
     .popup__content.js-content
-        .popup__title
+        h2.popup__title
             | Оставить заявку
         button(type="button" class="popup__button-close js-form-close")
-        .popup__text
+        p.popup__text
             | Заполните форму ниже и я свяжусь с вами в ближайшее время!
-        form(class="form" action="#")
-            .form__group
+        form(class="form" action="https://mailthis.to/aleksey91scorp@bk.ru" method="POST")
+            label.form__group
                 i(class="fa fa--user")
                 input(class="input" type="text" placeholder="Ваше имя" required)
-            .form__group
+            label.form__group
                 i(class="fa fa--envelope")
                 input(class="input" type="email" placeholder="Ваш e-mail" required)
-            .form__group
+            label.form__group
                 i(class="fa fa--phone")
                 input(id="phone" class="input" placeholder="Ваш номер телефона" type="tel" required)
             button(class="button button--red" type="submit")
