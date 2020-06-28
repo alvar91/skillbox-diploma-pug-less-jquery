@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <title>Дмитрий Алексеев Frontend-разработчик и веб-верстальщик</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -12,8 +12,8 @@
   <body>
     <header class="page-header">
       <div class="central-container">
-        <div class="page-header__wrapper">
-          <div class="page-header__wrapper-1">
+        <div class="page-header__wrapper">  
+          <div class="page-header__sub-wrapper">
             <button class="page-header__toggle page-header__toggle--closed" id="nav-btn"><svg class="page-header__toggle-icon page-header__toggle-icon--menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 18">
 <defs>
 <linearGradient id="grad_1" x1="0%" x2="0%" y1="100%" y2="0%">
@@ -58,8 +58,8 @@
         <div class="about-me__decorative start start--t-r decorative decorative--gradient decorative__div-2">&#60;div&#62;</div>
         <div class="about-me__photo"></div>
         <div class="central-container">
-          <h2 class="about-me__name section-heading">Дмитрий Алексеев</h2>
-          <p class="about-me__occupation">Frontend-разработчик и веб-верстальщик</p>
+          <h1 class="about-me__name section-heading">Дмитрий Алексеев</h1>
+          <h2 class="about-me__occupation">Frontend-разработчик и веб-верстальщик</h2>
           <button class="about-me__button button button--red js-popup">Узнать больше</button>
         </div>
       </section>
@@ -82,7 +82,7 @@
         <div class="central-container central-container--modified">
           <div class="portfolio__slider slider">
             <div class="slider__container">
-              <div class="slider__nav slider__nav--desktop slider__nav--left"></div>
+              <button class="slider__nav slider__nav--desktop slider__nav--left"></button>
               <div class="slider__list">
                 <div class="slider__item" id="slide-1">
                   <div class="slider__link slider__link--img">
@@ -117,7 +117,7 @@
                   </div><a class="slider__link slider__link--description" href="#">Сайт магазина детской одежды</a>
                 </div>
               </div>
-              <div class="slider__nav slider__nav--desktop slider__nav--right"></div>
+              <button class="slider__nav slider__nav--desktop slider__nav--right"></button>
               <div class="slider__nav slider__nav--mob nav-circle"></div>
               <div class="central-container">
                 <button class="portfolio__button button button--red js-popup">Заказать проект</button>
@@ -165,10 +165,10 @@
             <button class="page-footer__button button button--footer js-popup">Заказать звонок</button>
             <div class="page-footer__social social">
               <ul class="social__list">
-                <li class="social__item"><a class="social__link social__link--vk" href="#">Вконтакте</a></li>
-                <li class="social__item"><a class="social__link social__link--fb" href="#">Facebook</a></li>
-                <li class="social__item"><a class="social__link social__link--tw" href="#">Twitter</a></li>
-                <li class="social__item"><a class="social__link social__link--inst" href="#">Instagram</a></li>
+                <li class="social__item"><a class="social__link social__link--vk" href="https://vk.com/" target="_blank">Вконтакте</a></li>
+                <li class="social__item"><a class="social__link social__link--fb" href="https://ru-ru.facebook.com/" target="_blank">Facebook</a></li>
+                <li class="social__item"><a class="social__link social__link--tw" href="https://twitter.com/?lang=ru" target="_blank">Twitter</a></li>
+                <li class="social__item"><a class="social__link social__link--inst" href="https://www.instagram.com/?hl=ru" target="_blank">Instagram</a></li>
               </ul>
             </div>
           </div>
@@ -180,19 +180,19 @@
     </footer>
     <section class="popup js-form">
       <div class="popup__content js-content">
-        <div class="popup__title">Оставить заявку</div>
+        <h2 class="popup__title">Оставить заявку</h2>
         <button class="popup__button-close js-form-close" type="button"></button>
-        <div class="popup__text">Заполните форму ниже и я свяжусь с вами в ближайшее время!</div>
-        <form class="form" action="#">
-          <div class="form__group"><i class="fa fa--user"></i>
+        <p class="popup__text">Заполните форму ниже и я свяжусь с вами в ближайшее время!</p>
+        <form class="form" action="https://mailthis.to/aleksey91scorp@bk.ru" method="POST">
+          <label class="form__group"><i class="fa fa--user"></i>
             <input class="input" type="text" placeholder="Ваше имя" required>
-          </div>
-          <div class="form__group"><i class="fa fa--envelope"></i>
+          </label>
+          <label class="form__group"><i class="fa fa--envelope"></i>
             <input class="input" type="email" placeholder="Ваш e-mail" required>
-          </div>
-          <div class="form__group"><i class="fa fa--phone"></i>
+          </label>
+          <label class="form__group"><i class="fa fa--phone"></i>
             <input class="input" id="phone" placeholder="Ваш номер телефона" type="tel" required>
-          </div>
+          </label>
           <button class="button button--red" type="submit">Оставить заявку</button>
         </form>
       </div>
